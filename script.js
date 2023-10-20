@@ -7,7 +7,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Fetch the GeoJSON data from the file
-fetch('countries.geo.json')
+fetch('https://github.com/symntk/notion_food_map/blob/main/countries.geo.json')
     .then(response => response.json())
     .then(country_data => {
         // Add the GeoJSON data to the map
